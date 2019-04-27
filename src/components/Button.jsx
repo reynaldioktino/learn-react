@@ -1,16 +1,21 @@
-import React from 'react'
+import React from "react";
 
 class Button extends React.Component {
-    //fungsi dalam class component render()
-    //arrow function
-    showMessage = () => {
-        alert(this.props.message)
-    }
+  //fungsi dalam class component render()
+  //arrow function
+  showMessage = () => {
+    alert(this.props.message);
+  };
 
-    render() {
-        return <button className="btn-warna" onClick={ this.showMessage }>Simpaaan</button>
-    }
-
+  render() {
+    return (
+      <div>
+        <button className="btn-warna" onClick={this.showMessage}>
+          Coba Alert
+        </button>
+      </div>
+    );
+  }
 }
 
-export default Button
+export default Button;
